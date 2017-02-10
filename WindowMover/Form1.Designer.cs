@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.mainButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // mainButton
+            // 
+            this.mainButton.Font = new System.Drawing.Font("游ゴシック", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.mainButton.Location = new System.Drawing.Point(46, 77);
+            this.mainButton.Name = "mainButton";
+            this.mainButton.Size = new System.Drawing.Size(297, 166);
+            this.mainButton.TabIndex = 0;
+            this.mainButton.Text = "集合";
+            this.mainButton.UseVisualStyleBackColor = true;
+            this.mainButton.Click += new System.EventHandler(this.mainButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 313);
+            this.ClientSize = new System.Drawing.Size(522, 313);
+            this.Controls.Add(this.mainButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button mainButton;
     }
 }
 
